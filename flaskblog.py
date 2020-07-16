@@ -1,7 +1,11 @@
-from flask import Flask , render_template
-app = Flask(__name__)
+from flask import Flask , render_template, url_for
+# "Import flask and render template ,
+app = Flask(__name__)# app is a flask variable whihc is set to an instance ,Add flask variable,
 
 
+
+# 
+#  Add dictionary which represents a single blog post"
 posts = [
     {
         'author': 'Corey Schafer',
@@ -17,7 +21,7 @@ posts = [
     }
 ]
 
-
+#  Add an app route for the home and about page ,
 @app.route("/")
 @app.route("/home")
 def home():
@@ -25,7 +29,11 @@ def home():
 
 @app.route("/about")
 def about():
-    return render_template ('about.html')
+    return render_template ('about.html', title = 'About')
+
+@app.route("/game")
+def game():
+    return render_template ('game.html')
 
 
 

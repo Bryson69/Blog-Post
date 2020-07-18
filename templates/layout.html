@@ -31,15 +31,15 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="/">Home
+          <a class="nav-link" href="{{ url_for('home') }}">Home
             <span class="sr-only">(current)</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/about">About</a>
+          <a class="nav-link" href="{{ url_for('about') }}">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/game">Games</a>
+          <a class="nav-link" href="{{ url_for('game') }}">Games</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
@@ -55,10 +55,10 @@
       </ul>
       <ul class="navbar-nav ml-auto nav-flex-icons">
         <li class="nav-item">
-          <a class="nav-link" href="/login">Login</a>
+          <a class="nav-link" href="{{ url_for('login') }}">Login</a>
           </li>
         <li class="nav-item">
-          <a class="nav-link" href="/register">Register</a>
+          <a class="nav-link" href="{{ url_for('register') }}">Register</a>
         </li>
         <li class="nav-item">
           <a class="nav-link waves-effect waves-light">
@@ -80,12 +80,13 @@
       <div class="row">
             <div class="col-md-8">
               {% with messages = get_flashed_messages(with_categories = true) %}
-                {% if messagges %}
+                {% if messages %}
                 {% for category, message in messages %}
-                <div class="alert alert-{{ category }}">
-                  {{ message }}
+                  <div class="alert alert-{{ category }}">
+                    {{ message }}
 
-                </div>
+                  </div>
+                {% endfor %}
                 {% endif %}
               {% endwith %}
 

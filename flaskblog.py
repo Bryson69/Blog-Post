@@ -1,12 +1,28 @@
+from datetime import datetime
 from flask import Flask , render_template, url_for, flash, redirect
+from flask_sqlalchemy import SQLAlchemy
 from forms import RegistrationForm, LoginForm
 
 
 # "Import flask and render template ,
 app = Flask(__name__)# app is a flask variable whihc is set to an instance ,Add flask variable,
-
-
 app.config['SECRET_KEY'] = 'c7f3e00d51e9c47c506c8d05ec7d027d'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
+db = SQLAlchemy(app)
+
+
+
+
+class Post(db.Model):
+    id = db.Column(db.Integerm primary_key = True)
+    title = db.Column(db.String(100), nullable = False)
+    date_posted = db.Column(db.DateTime, nullable = False, default = datetime.utcnow)
+    content = db.Column(db.Text, nullable = False)
+    user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable = False)
+
+    dep __repr__(self):
+    return f"User('{self.title}', '{self.date_posted}')"
+
 
 # 
 #  Add dictionary which represents a single blog post"

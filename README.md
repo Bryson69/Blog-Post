@@ -40,7 +40,7 @@ This is a web application that allows various users to submit a short blog. User
 * A User the needs to sign in to the blog account and post a blog
 
 # CREDITS
-#### Google.com, StackOverflow.com and Miguel Grinberg -author of 'Flask Web Development, 2nd Edition'
+### Google.com, StackOverflow.com and Miguel Grinberg -author of 'Flask Web Development'.
 
 # Support and Contacts
 In case You have any issues using this code please do no hesitate to get in touch with me through brysonmundia@gmail.com or leave a comment here on Github.

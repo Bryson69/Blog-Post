@@ -10,8 +10,8 @@
                       <article class="media content-section">
                           <img class="square my-4  account-img animated rollIn" style="width: 200px; height: 100px;" src=" {{url_for('static', filename='images/' + post.author.image_file)}} " alt="">
                             <div class="media-body">
-                                <div class="article-metadata">
-                                    <a class="mr-2 ml-4 animated slideInRight" href="#">{{ post.author.username }}</a>
+                                <div class="article-metadata my-4 ml-4">
+                                    <a class="mr-2 ml-4 animated slideInRight" href="{{ url_for('account') }}">{{ post.author.username }}</a>
                                    <small class="text-muted">{{ post.date_posted.strftime('%Y-%m-%d') }}</small>
                                 </div>
                             </div>

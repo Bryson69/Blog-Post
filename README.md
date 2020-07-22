@@ -1,7 +1,7 @@
 # Blog-app
 ##A web application that allows the users to Post blogs, Delete and Update on blogs.
 
-## By [Bryson Mundia](https://github.com/Bryson69/)😎 
+## By BrysonMundia (https://github.com/Bryson69)😎 
 
 ## Description
 

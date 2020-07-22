@@ -37,13 +37,13 @@ This is a web application that allows various users to submit a short blog. User
 
 # How it works
 * A User needs to sign up
-* A User the needs to sign in to the blog acount and post a blog
+* A User the needs to sign in to the blog account and post a blog
 
 # CREDITS
 #### Google.com, StackOverflow.com and Miguel Grinberg -author of 'Flask Web Development, 2nd Edition'
 
 # Support and Contacts
-In case You have any issues using this code please do no hesitate to get in touch with me through maratah7@gmail.com or leave a comment here on Github.
+In case You have any issues using this code please do no hesitate to get in touch with me through brysonmundi@gmail.com or leave a comment here on Github.
 
 ## Known Bugs
 Change the user profile picture does not function properly.

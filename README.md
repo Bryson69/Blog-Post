@@ -43,7 +43,7 @@ This is a web application that allows various users to submit a short blog. User
 #### Google.com, StackOverflow.com and Miguel Grinberg -author of 'Flask Web Development, 2nd Edition'
 
 # Support and Contacts
-In case You have any issues using this code please do no hesitate to get in touch with me through brysonmundi@gmail.com or leave a comment here on Github.
+In case You have any issues using this code please do no hesitate to get in touch with me through brysonmundia@gmail.com or leave a comment here on Github.
 
 ## Known Bugs
 Change the user profile picture does not function properly.

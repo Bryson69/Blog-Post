@@ -1,5 +1,5 @@
 # Blog-Post
-##A web application that allows the users to Post blogs, Delete and Update on blogs.
+## A web application that allows the users to Post blogs, Delete and Update on blogs.
 
 ## By BrysonMundia (https://github.com/Bryson69)😎 
 
